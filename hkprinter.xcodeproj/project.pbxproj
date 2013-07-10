@@ -18,6 +18,17 @@
 		9BCE6B04178CFF0000ECA95E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B03178CFF0000ECA95E /* Default-568h@2x.png */; };
 		9BCE6B07178CFF0000ECA95E /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B06178CFF0000ECA95E /* HKViewController.m */; };
 		9BCE6B0A178CFF0000ECA95E /* HKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B08178CFF0000ECA95E /* HKViewController.xib */; };
+		9BCE6B11178D083700ECA95E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B10178D083700ECA95E /* README.md */; };
+		9BCE6B27178D0A1100ECA95E /* HKPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B14178D0A1100ECA95E /* HKPrinter.m */; };
+		9BCE6B28178D0A1100ECA95E /* HKPrinterBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B16178D0A1100ECA95E /* HKPrinterBitmap.m */; };
+		9BCE6B29178D0A1100ECA95E /* HKRFPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B19178D0A1100ECA95E /* HKRFPrinter.m */; };
+		9BCE6B2A178D0A1100ECA95E /* HKSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B1B178D0A1100ECA95E /* HKSocket.m */; };
+		9BCE6B2B178D0A1100ECA95E /* HKStarPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B1E178D0A1100ECA95E /* HKStarPrinter.m */; };
+		9BCE6B2C178D0A1100ECA95E /* HKTableText.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B20178D0A1100ECA95E /* HKTableText.m */; };
+		9BCE6B2D178D0A1100ECA95E /* HKTextImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B22178D0A1100ECA95E /* HKTextImage.m */; };
+		9BCE6B2E178D0A1100ECA95E /* RasterDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B24178D0A1100ECA95E /* RasterDocument.m */; };
+		9BCE6B2F178D0A1100ECA95E /* StarBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B26178D0A1100ECA95E /* StarBitmap.m */; };
+		9BCE6B31178D0A4400ECA95E /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6B30178D0A4400ECA95E /* StarIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +48,26 @@
 		9BCE6B05178CFF0000ECA95E /* HKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
 		9BCE6B06178CFF0000ECA95E /* HKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
 		9BCE6B09178CFF0000ECA95E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HKViewController.xib; sourceTree = "<group>"; };
+		9BCE6B10178D083700ECA95E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9BCE6B13178D0A1100ECA95E /* HKPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPrinter.h; sourceTree = "<group>"; };
+		9BCE6B14178D0A1100ECA95E /* HKPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPrinter.m; sourceTree = "<group>"; };
+		9BCE6B15178D0A1100ECA95E /* HKPrinterBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPrinterBitmap.h; sourceTree = "<group>"; };
+		9BCE6B16178D0A1100ECA95E /* HKPrinterBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPrinterBitmap.m; sourceTree = "<group>"; };
+		9BCE6B18178D0A1100ECA95E /* HKRFPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKRFPrinter.h; sourceTree = "<group>"; };
+		9BCE6B19178D0A1100ECA95E /* HKRFPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKRFPrinter.m; sourceTree = "<group>"; };
+		9BCE6B1A178D0A1100ECA95E /* HKSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKSocket.h; sourceTree = "<group>"; };
+		9BCE6B1B178D0A1100ECA95E /* HKSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKSocket.m; sourceTree = "<group>"; };
+		9BCE6B1D178D0A1100ECA95E /* HKStarPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKStarPrinter.h; sourceTree = "<group>"; };
+		9BCE6B1E178D0A1100ECA95E /* HKStarPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKStarPrinter.m; sourceTree = "<group>"; };
+		9BCE6B1F178D0A1100ECA95E /* HKTableText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTableText.h; sourceTree = "<group>"; };
+		9BCE6B20178D0A1100ECA95E /* HKTableText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTableText.m; sourceTree = "<group>"; };
+		9BCE6B21178D0A1100ECA95E /* HKTextImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTextImage.h; sourceTree = "<group>"; };
+		9BCE6B22178D0A1100ECA95E /* HKTextImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTextImage.m; sourceTree = "<group>"; };
+		9BCE6B23178D0A1100ECA95E /* RasterDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RasterDocument.h; sourceTree = "<group>"; };
+		9BCE6B24178D0A1100ECA95E /* RasterDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RasterDocument.m; sourceTree = "<group>"; };
+		9BCE6B25178D0A1100ECA95E /* StarBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarBitmap.h; sourceTree = "<group>"; };
+		9BCE6B26178D0A1100ECA95E /* StarBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarBitmap.m; sourceTree = "<group>"; };
+		9BCE6B30178D0A4400ECA95E /* StarIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StarIO.framework; path = printer/StarIO.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 				9BCE6AEE178CFF0000ECA95E /* UIKit.framework in Frameworks */,
 				9BCE6AF0178CFF0000ECA95E /* Foundation.framework in Frameworks */,
 				9BCE6AF2178CFF0000ECA95E /* CoreGraphics.framework in Frameworks */,
+				9BCE6B31178D0A4400ECA95E /* StarIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +88,8 @@
 		9BCE6AE1178CFF0000ECA95E = {
 			isa = PBXGroup;
 			children = (
+				9BCE6B12178D0A1100ECA95E /* printer */,
+				9BCE6B10178D083700ECA95E /* README.md */,
 				9BCE6AF3178CFF0000ECA95E /* hkprinter */,
 				9BCE6AEC178CFF0000ECA95E /* Frameworks */,
 				9BCE6AEB178CFF0000ECA95E /* Products */,
@@ -73,6 +107,7 @@
 		9BCE6AEC178CFF0000ECA95E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BCE6B30178D0A4400ECA95E /* StarIO.framework */,
 				9BCE6AED178CFF0000ECA95E /* UIKit.framework */,
 				9BCE6AEF178CFF0000ECA95E /* Foundation.framework */,
 				9BCE6AF1178CFF0000ECA95E /* CoreGraphics.framework */,
@@ -105,6 +140,47 @@
 				9BCE6B03178CFF0000ECA95E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BCE6B12178D0A1100ECA95E /* printer */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B13178D0A1100ECA95E /* HKPrinter.h */,
+				9BCE6B14178D0A1100ECA95E /* HKPrinter.m */,
+				9BCE6B15178D0A1100ECA95E /* HKPrinterBitmap.h */,
+				9BCE6B16178D0A1100ECA95E /* HKPrinterBitmap.m */,
+				9BCE6B17178D0A1100ECA95E /* runfaprinter */,
+				9BCE6B1C178D0A1100ECA95E /* starprinter */,
+			);
+			path = printer;
+			sourceTree = "<group>";
+		};
+		9BCE6B17178D0A1100ECA95E /* runfaprinter */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B18178D0A1100ECA95E /* HKRFPrinter.h */,
+				9BCE6B19178D0A1100ECA95E /* HKRFPrinter.m */,
+				9BCE6B1A178D0A1100ECA95E /* HKSocket.h */,
+				9BCE6B1B178D0A1100ECA95E /* HKSocket.m */,
+			);
+			path = runfaprinter;
+			sourceTree = "<group>";
+		};
+		9BCE6B1C178D0A1100ECA95E /* starprinter */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B1D178D0A1100ECA95E /* HKStarPrinter.h */,
+				9BCE6B1E178D0A1100ECA95E /* HKStarPrinter.m */,
+				9BCE6B1F178D0A1100ECA95E /* HKTableText.h */,
+				9BCE6B20178D0A1100ECA95E /* HKTableText.m */,
+				9BCE6B21178D0A1100ECA95E /* HKTextImage.h */,
+				9BCE6B22178D0A1100ECA95E /* HKTextImage.m */,
+				9BCE6B23178D0A1100ECA95E /* RasterDocument.h */,
+				9BCE6B24178D0A1100ECA95E /* RasterDocument.m */,
+				9BCE6B25178D0A1100ECA95E /* StarBitmap.h */,
+				9BCE6B26178D0A1100ECA95E /* StarBitmap.m */,
+			);
+			path = starprinter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +240,7 @@
 				9BCE6B02178CFF0000ECA95E /* Default@2x.png in Resources */,
 				9BCE6B04178CFF0000ECA95E /* Default-568h@2x.png in Resources */,
 				9BCE6B0A178CFF0000ECA95E /* HKViewController.xib in Resources */,
+				9BCE6B11178D083700ECA95E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +254,15 @@
 				9BCE6AFA178CFF0000ECA95E /* main.m in Sources */,
 				9BCE6AFE178CFF0000ECA95E /* HKAppDelegate.m in Sources */,
 				9BCE6B07178CFF0000ECA95E /* HKViewController.m in Sources */,
+				9BCE6B27178D0A1100ECA95E /* HKPrinter.m in Sources */,
+				9BCE6B28178D0A1100ECA95E /* HKPrinterBitmap.m in Sources */,
+				9BCE6B29178D0A1100ECA95E /* HKRFPrinter.m in Sources */,
+				9BCE6B2A178D0A1100ECA95E /* HKSocket.m in Sources */,
+				9BCE6B2B178D0A1100ECA95E /* HKStarPrinter.m in Sources */,
+				9BCE6B2C178D0A1100ECA95E /* HKTableText.m in Sources */,
+				9BCE6B2D178D0A1100ECA95E /* HKTextImage.m in Sources */,
+				9BCE6B2E178D0A1100ECA95E /* RasterDocument.m in Sources */,
+				9BCE6B2F178D0A1100ECA95E /* StarBitmap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +347,10 @@
 		9BCE6B0E178CFF0000ECA95E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/printer\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hkprinter/hkprinter-Prefix.pch";
 				INFOPLIST_FILE = "hkprinter/hkprinter-Info.plist";
@@ -272,6 +362,10 @@
 		9BCE6B0F178CFF0000ECA95E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/printer\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hkprinter/hkprinter-Prefix.pch";
 				INFOPLIST_FILE = "hkprinter/hkprinter-Info.plist";
