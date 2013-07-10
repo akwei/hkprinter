@@ -115,6 +115,7 @@
 
 #pragma mark - private method
 
+// 参考 http://developer.apple.com/library/mac/#qa/qa1509/_index.html
 -(void)ManipulateImagePixelDataWithCGImageRef:(CGImageRef)inImage imageData:(void*)oimageData
 {
     // Create the bitmap context
@@ -157,6 +158,7 @@
 	return;
 }
 
+// 参考 http://developer.apple.com/library/mac/#qa/qa1509/_index.html
 -(CGContextRef)CreateARGBBitmapContextWithCGImageRef:(CGImageRef)inImage
 {
     CGContextRef    context = NULL;

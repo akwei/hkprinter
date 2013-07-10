@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define RGBA 4
-#define RGBA_8_BIT 8
-
 typedef struct ARGBPixel
 {
 	unsigned char alpha;
