@@ -29,6 +29,7 @@
 		9BCE6B2E178D0A1100ECA95E /* RasterDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B24178D0A1100ECA95E /* RasterDocument.m */; };
 		9BCE6B2F178D0A1100ECA95E /* StarBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B26178D0A1100ECA95E /* StarBitmap.m */; };
 		9BCE6B31178D0A4400ECA95E /* StarIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6B30178D0A4400ECA95E /* StarIO.framework */; };
+		9BCE6B37178D0C4400ECA95E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B36178D0C4400ECA95E /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		9BCE6B25178D0A1100ECA95E /* StarBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarBitmap.h; sourceTree = "<group>"; };
 		9BCE6B26178D0A1100ECA95E /* StarBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarBitmap.m; sourceTree = "<group>"; };
 		9BCE6B30178D0A4400ECA95E /* StarIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StarIO.framework; path = printer/StarIO.framework; sourceTree = "<group>"; };
+		9BCE6B35178D0C4400ECA95E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		9BCE6B36178D0C4400ECA95E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		9BCE6AE1178CFF0000ECA95E = {
 			isa = PBXGroup;
 			children = (
+				9BCE6B32178D0C4400ECA95E /* basetools */,
 				9BCE6B12178D0A1100ECA95E /* printer */,
 				9BCE6B10178D083700ECA95E /* README.md */,
 				9BCE6AF3178CFF0000ECA95E /* hkprinter */,
@@ -183,6 +187,31 @@
 			path = starprinter;
 			sourceTree = "<group>";
 		};
+		9BCE6B32178D0C4400ECA95E /* basetools */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B33178D0C4400ECA95E /* CocoaAsyncSocket */,
+			);
+			path = basetools;
+			sourceTree = "<group>";
+		};
+		9BCE6B33178D0C4400ECA95E /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B34178D0C4400ECA95E /* GCD */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		9BCE6B34178D0C4400ECA95E /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6B35178D0C4400ECA95E /* GCDAsyncSocket.h */,
+				9BCE6B36178D0C4400ECA95E /* GCDAsyncSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +292,7 @@
 				9BCE6B2D178D0A1100ECA95E /* HKTextImage.m in Sources */,
 				9BCE6B2E178D0A1100ECA95E /* RasterDocument.m in Sources */,
 				9BCE6B2F178D0A1100ECA95E /* StarBitmap.m in Sources */,
+				9BCE6B37178D0C4400ECA95E /* GCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
