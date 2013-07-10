@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BCE6AEE178CFF0000ECA95E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AED178CFF0000ECA95E /* UIKit.framework */; };
+		9BCE6AF0178CFF0000ECA95E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AEF178CFF0000ECA95E /* Foundation.framework */; };
+		9BCE6AF2178CFF0000ECA95E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AF1178CFF0000ECA95E /* CoreGraphics.framework */; };
+		9BCE6AF8178CFF0000ECA95E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6AF6178CFF0000ECA95E /* InfoPlist.strings */; };
+		9BCE6AFA178CFF0000ECA95E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6AF9178CFF0000ECA95E /* main.m */; };
+		9BCE6AFE178CFF0000ECA95E /* HKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6AFD178CFF0000ECA95E /* HKAppDelegate.m */; };
+		9BCE6B00178CFF0000ECA95E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6AFF178CFF0000ECA95E /* Default.png */; };
+		9BCE6B02178CFF0000ECA95E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B01178CFF0000ECA95E /* Default@2x.png */; };
+		9BCE6B04178CFF0000ECA95E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B03178CFF0000ECA95E /* Default-568h@2x.png */; };
+		9BCE6B07178CFF0000ECA95E /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE6B06178CFF0000ECA95E /* HKViewController.m */; };
+		9BCE6B0A178CFF0000ECA95E /* HKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BCE6B08178CFF0000ECA95E /* HKViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BCE6AEA178CFF0000ECA95E /* hkprinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hkprinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCE6AED178CFF0000ECA95E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9BCE6AEF178CFF0000ECA95E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BCE6AF1178CFF0000ECA95E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9BCE6AF5178CFF0000ECA95E /* hkprinter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hkprinter-Info.plist"; sourceTree = "<group>"; };
+		9BCE6AF7178CFF0000ECA95E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BCE6AF9178CFF0000ECA95E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BCE6AFB178CFF0000ECA95E /* hkprinter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hkprinter-Prefix.pch"; sourceTree = "<group>"; };
+		9BCE6AFC178CFF0000ECA95E /* HKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKAppDelegate.h; sourceTree = "<group>"; };
+		9BCE6AFD178CFF0000ECA95E /* HKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKAppDelegate.m; sourceTree = "<group>"; };
+		9BCE6AFF178CFF0000ECA95E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9BCE6B01178CFF0000ECA95E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9BCE6B03178CFF0000ECA95E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9BCE6B05178CFF0000ECA95E /* HKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		9BCE6B06178CFF0000ECA95E /* HKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		9BCE6B09178CFF0000ECA95E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HKViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BCE6AE7178CFF0000ECA95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCE6AEE178CFF0000ECA95E /* UIKit.framework in Frameworks */,
+				9BCE6AF0178CFF0000ECA95E /* Foundation.framework in Frameworks */,
+				9BCE6AF2178CFF0000ECA95E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BCE6AE1178CFF0000ECA95E = {
+			isa = PBXGroup;
+			children = (
+				9BCE6AF3178CFF0000ECA95E /* hkprinter */,
+				9BCE6AEC178CFF0000ECA95E /* Frameworks */,
+				9BCE6AEB178CFF0000ECA95E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BCE6AEB178CFF0000ECA95E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6AEA178CFF0000ECA95E /* hkprinter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BCE6AEC178CFF0000ECA95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6AED178CFF0000ECA95E /* UIKit.framework */,
+				9BCE6AEF178CFF0000ECA95E /* Foundation.framework */,
+				9BCE6AF1178CFF0000ECA95E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BCE6AF3178CFF0000ECA95E /* hkprinter */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6AFC178CFF0000ECA95E /* HKAppDelegate.h */,
+				9BCE6AFD178CFF0000ECA95E /* HKAppDelegate.m */,
+				9BCE6B05178CFF0000ECA95E /* HKViewController.h */,
+				9BCE6B06178CFF0000ECA95E /* HKViewController.m */,
+				9BCE6B08178CFF0000ECA95E /* HKViewController.xib */,
+				9BCE6AF4178CFF0000ECA95E /* Supporting Files */,
+			);
+			path = hkprinter;
+			sourceTree = "<group>";
+		};
+		9BCE6AF4178CFF0000ECA95E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE6AF5178CFF0000ECA95E /* hkprinter-Info.plist */,
+				9BCE6AF6178CFF0000ECA95E /* InfoPlist.strings */,
+				9BCE6AF9178CFF0000ECA95E /* main.m */,
+				9BCE6AFB178CFF0000ECA95E /* hkprinter-Prefix.pch */,
+				9BCE6AFF178CFF0000ECA95E /* Default.png */,
+				9BCE6B01178CFF0000ECA95E /* Default@2x.png */,
+				9BCE6B03178CFF0000ECA95E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BCE6AE9178CFF0000ECA95E /* hkprinter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCE6B0D178CFF0000ECA95E /* Build configuration list for PBXNativeTarget "hkprinter" */;
+			buildPhases = (
+				9BCE6AE6178CFF0000ECA95E /* Sources */,
+				9BCE6AE7178CFF0000ECA95E /* Frameworks */,
+				9BCE6AE8178CFF0000ECA95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hkprinter;
+			productName = hkprinter;
+			productReference = 9BCE6AEA178CFF0000ECA95E /* hkprinter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BCE6AE2178CFF0000ECA95E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HK;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = huoku;
+			};
+			buildConfigurationList = 9BCE6AE5178CFF0000ECA95E /* Build configuration list for PBXProject "hkprinter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BCE6AE1178CFF0000ECA95E;
+			productRefGroup = 9BCE6AEB178CFF0000ECA95E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BCE6AE9178CFF0000ECA95E /* hkprinter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BCE6AE8178CFF0000ECA95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCE6AF8178CFF0000ECA95E /* InfoPlist.strings in Resources */,
+				9BCE6B00178CFF0000ECA95E /* Default.png in Resources */,
+				9BCE6B02178CFF0000ECA95E /* Default@2x.png in Resources */,
+				9BCE6B04178CFF0000ECA95E /* Default-568h@2x.png in Resources */,
+				9BCE6B0A178CFF0000ECA95E /* HKViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BCE6AE6178CFF0000ECA95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCE6AFA178CFF0000ECA95E /* main.m in Sources */,
+				9BCE6AFE178CFF0000ECA95E /* HKAppDelegate.m in Sources */,
+				9BCE6B07178CFF0000ECA95E /* HKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BCE6AF6178CFF0000ECA95E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCE6AF7178CFF0000ECA95E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9BCE6B08178CFF0000ECA95E /* HKViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCE6B09178CFF0000ECA95E /* en */,
+			);
+			name = HKViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BCE6B0B178CFF0000ECA95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BCE6B0C178CFF0000ECA95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BCE6B0E178CFF0000ECA95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hkprinter/hkprinter-Prefix.pch";
+				INFOPLIST_FILE = "hkprinter/hkprinter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9BCE6B0F178CFF0000ECA95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hkprinter/hkprinter-Prefix.pch";
+				INFOPLIST_FILE = "hkprinter/hkprinter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BCE6AE5178CFF0000ECA95E /* Build configuration list for PBXProject "hkprinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCE6B0B178CFF0000ECA95E /* Debug */,
+				9BCE6B0C178CFF0000ECA95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCE6B0D178CFF0000ECA95E /* Build configuration list for PBXNativeTarget "hkprinter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCE6B0E178CFF0000ECA95E /* Debug */,
+				9BCE6B0F178CFF0000ECA95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BCE6AE2178CFF0000ECA95E /* Project object */;
+}
