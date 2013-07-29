@@ -1,6 +1,7 @@
 //
 //  HKRFPrinter.h
 //  huoku_starprinter_arc
+//  使用GCDAsyncSocket iOS 6以下需要 ExternalAccessory.framework CFNetwork.frame Security.framework
 //
 //  Created by akwei on 13-6-28.
 //  Copyright (c) 2013年 huoku. All rights reserved.

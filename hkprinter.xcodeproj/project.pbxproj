@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BAD642F17A66319003719E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD642E17A66319003719E2 /* Security.framework */; };
+		9BAD643117A6632B003719E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD643017A6632B003719E2 /* CFNetwork.framework */; };
+		9BAD643317A6634D003719E2 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD643217A6634D003719E2 /* ExternalAccessory.framework */; };
 		9BCE6AEE178CFF0000ECA95E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AED178CFF0000ECA95E /* UIKit.framework */; };
 		9BCE6AF0178CFF0000ECA95E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AEF178CFF0000ECA95E /* Foundation.framework */; };
 		9BCE6AF2178CFF0000ECA95E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE6AF1178CFF0000ECA95E /* CoreGraphics.framework */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BAD642E17A66319003719E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9BAD643017A6632B003719E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9BAD643217A6634D003719E2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		9BCE6AEA178CFF0000ECA95E /* hkprinter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hkprinter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCE6AED178CFF0000ECA95E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BCE6AEF178CFF0000ECA95E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAD643317A6634D003719E2 /* ExternalAccessory.framework in Frameworks */,
+				9BAD643117A6632B003719E2 /* CFNetwork.framework in Frameworks */,
+				9BAD642F17A66319003719E2 /* Security.framework in Frameworks */,
 				9BCE6AEE178CFF0000ECA95E /* UIKit.framework in Frameworks */,
 				9BCE6AF0178CFF0000ECA95E /* Foundation.framework in Frameworks */,
 				9BCE6AF2178CFF0000ECA95E /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +100,9 @@
 		9BCE6AE1178CFF0000ECA95E = {
 			isa = PBXGroup;
 			children = (
+				9BAD643217A6634D003719E2 /* ExternalAccessory.framework */,
+				9BAD643017A6632B003719E2 /* CFNetwork.framework */,
+				9BAD642E17A66319003719E2 /* Security.framework */,
 				9BCE6B32178D0C4400ECA95E /* basetools */,
 				9BCE6B12178D0A1100ECA95E /* printer */,
 				9BCE6B10178D083700ECA95E /* README.md */,
@@ -343,7 +355,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -367,7 +379,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -423,6 +435,7 @@
 				9BCE6B0F178CFF0000ECA95E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
