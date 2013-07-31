@@ -17,7 +17,6 @@
 
 @interface HKSocket ()
 @property(nonatomic,strong)GCDAsyncSocket* socket;
-@property(nonatomic,assign)dispatch_queue_t queue;
 @property(nonatomic,strong)NSCondition* cond;
 @property(nonatomic,strong)NSCondition* con_cond;
 @property(nonatomic,assign)BOOL done;
@@ -27,7 +26,9 @@
 @property(nonatomic,assign)BOOL isWriteTimeout;
 @end
 
-@implementation HKSocket
+@implementation HKSocket{
+    dispatch_queue_t _queue;
+}
 
 -(id)initWithHost:(NSString *)host port:(NSUInteger)port timeout:(NSTimeInterval)timeout{
     self = [super init];
@@ -36,7 +37,7 @@
         self.port = port;
         self.timeout = timeout;
         NSString* queueName = [NSString stringWithFormat:@"HKSocket_queueName_%@",[self description]];
-        self.queue = dispatch_queue_create([queueName UTF8String], DISPATCH_QUEUE_SERIAL);
+        _queue = dispatch_queue_create([queueName UTF8String], DISPATCH_QUEUE_SERIAL);
         self.done = NO;
         self.cond = [[NSCondition alloc] init];
         self.con_cond = [[NSCondition alloc] init];
@@ -164,7 +165,7 @@
     if (self.socket) {
         self.socket = nil;
     }
-    self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:self.queue];
+    self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:_queue];
     NSError *err = nil;
     NSException* ex;
     @try {
