@@ -24,7 +24,15 @@
 
 -(id)initWithHost:(NSString*)host port:(NSUInteger)port timeout:(NSTimeInterval)timeout;
 -(void)open;
+/*
+ 发送打印指令
+ */
 -(void)writeData:(NSData*)data;
+/*
+ 发送打印指令
+ @param blockSize 每次发送的字节数量
+ */
+-(void)writeData:(NSData*)data blockSize:(NSUInteger)blockSize;
 -(NSData*)readData;
 -(void)close;
 @end

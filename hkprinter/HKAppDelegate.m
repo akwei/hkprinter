@@ -9,6 +9,7 @@
 #import "HKAppDelegate.h"
 #import "HKViewController.h"
 #import "HKPOSTable.h"
+#import "HKSocket.h"
 
 @implementation HKAppDelegate
 
@@ -19,7 +20,8 @@
 //    self.viewController = [[HKViewController alloc] initWithNibName:@"HKViewController" bundle:nil];
 //    self.window.rootViewController = self.viewController;
 //    [self.window makeKeyAndVisible];
-    [self testHKPOSTable];
+//    [self testHKPOSTable];
+    [self testSocket];
     return YES;
 }
 
@@ -45,6 +47,22 @@
     [table addRow:row];
     NSString* text = [table getText];
     printf("%s",[text UTF8String]);
+}
+
+-(void)testSocket{
+    HKSocket* socket = [[HKSocket alloc] initWithHost:@"192.168.1.104" port:9900 timeout:0];
+    @try {
+        [socket open];
+        NSString* s= @"wy test my 啊，哈哈哈哈，我来了，大家都来测试以下好玩不";
+        NSData* data = [s dataUsingEncoding:NSUTF8StringEncoding];
+        [socket writeData:data blockSize:2];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"%@",[exception description]);
+    }
+    @finally {
+        [socket close];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

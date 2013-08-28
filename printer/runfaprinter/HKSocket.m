@@ -85,6 +85,31 @@
     }];
 }
 
+-(void)writeData:(NSData *)data blockSize:(NSUInteger)blockSize{
+    HKSocket* me = self;
+    [self workWithBlock:^{
+        NSUInteger remain = [data length];
+        NSUInteger offset = 0;
+        do {
+            NSUInteger writeSize = 0;
+            if (blockSize <= remain) {
+                writeSize = blockSize;
+            }
+            else{
+                writeSize = remain;
+            }
+            remain = remain - writeSize;
+            NSRange range = NSMakeRange(offset, writeSize);
+            NSData* blockData = [data subdataWithRange:range];
+            [me.socket writeData:blockData withTimeout:self.timeout tag:1];
+            if (remain == 0) {
+                break;
+            }
+            offset = offset + writeSize;
+        } while (true);
+    }];
+}
+
 -(NSData *)readData{
     HKSocket* me = self;
     me.receivedData = nil;
@@ -132,7 +157,7 @@
     [self afterResponse];
 }
 
-- (void)socket:(GCDAsyncSocket *)sender didReadData:(NSData *)data withTag:(long)tag{
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
 #if HK_SOCKET_DEBUG
     NSLog(@"data for tag %llu didRead",(unsigned long long)tag);
 #endif
