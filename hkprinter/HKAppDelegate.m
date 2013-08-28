@@ -7,19 +7,44 @@
 //
 
 #import "HKAppDelegate.h"
-
 #import "HKViewController.h"
+#import "HKPOSTable.h"
 
 @implementation HKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[HKViewController alloc] initWithNibName:@"HKViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.viewController = [[HKViewController alloc] initWithNibName:@"HKViewController" bundle:nil];
+//    self.window.rootViewController = self.viewController;
+//    [self.window makeKeyAndVisible];
+    [self testHKPOSTable];
     return YES;
+}
+
+-(void)testHKPOSTable{
+    HKPOSTable* table = [[HKPOSTable alloc] init];
+    HKPOSRow* row = [[HKPOSRow alloc] init];
+    HKPOSColumn* col0 = [[HKPOSColumn alloc] init];
+    col0.maxWordCount = 10;
+    col0.alignment = HKPOSAlignmentLeft;
+    col0.text = @"test my gdtest my gdtest my gdtest my gd";
+    [row addColumn:col0];
+    
+    HKPOSColumn* spaceCol = [[HKPOSColumn alloc] init];
+    spaceCol.maxWordCount=4;
+    spaceCol.text = @"        ";
+    [row addColumn:spaceCol];
+    
+    HKPOSColumn* col1 = [[HKPOSColumn alloc] init];
+    col1.maxWordCount = 10;
+    col1.alignment = HKPOSAlignmentRight;
+    col1.text = @"wy test my 啊，哈哈哈哈，我来了，大家都来测试以下好玩不";
+    [row addColumn:col1];
+    [table addRow:row];
+    NSString* text = [table getText];
+    printf("%s",[text UTF8String]);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

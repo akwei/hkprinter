@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6AE3A217C9B9CD001A3BF5 /* HKPOSTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AE3A117C9B9CD001A3BF5 /* HKPOSTable.m */; };
 		9BAD642F17A66319003719E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD642E17A66319003719E2 /* Security.framework */; };
 		9BAD643117A6632B003719E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD643017A6632B003719E2 /* CFNetwork.framework */; };
 		9BAD643317A6634D003719E2 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAD643217A6634D003719E2 /* ExternalAccessory.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6AE3A017C9B9CD001A3BF5 /* HKPOSTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPOSTable.h; sourceTree = "<group>"; };
+		9B6AE3A117C9B9CD001A3BF5 /* HKPOSTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPOSTable.m; sourceTree = "<group>"; };
 		9BAD642E17A66319003719E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9BAD643017A6632B003719E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9BAD643217A6634D003719E2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
@@ -167,6 +170,8 @@
 				9BCE6B16178D0A1100ECA95E /* HKPrinterBitmap.m */,
 				9BCE6B17178D0A1100ECA95E /* runfaprinter */,
 				9BCE6B1C178D0A1100ECA95E /* starprinter */,
+				9B6AE3A017C9B9CD001A3BF5 /* HKPOSTable.h */,
+				9B6AE3A117C9B9CD001A3BF5 /* HKPOSTable.m */,
 			);
 			path = printer;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				9BCE6B2E178D0A1100ECA95E /* RasterDocument.m in Sources */,
 				9BCE6B2F178D0A1100ECA95E /* StarBitmap.m in Sources */,
 				9BCE6B37178D0C4400ECA95E /* GCDAsyncSocket.m in Sources */,
+				9B6AE3A217C9B9CD001A3BF5 /* HKPOSTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
