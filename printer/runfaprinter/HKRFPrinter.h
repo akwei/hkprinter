@@ -16,4 +16,6 @@
 
 -(void)printText:(NSString*)text;
 
+-(void)addTextCommand:(NSString*)text;
+
 @end

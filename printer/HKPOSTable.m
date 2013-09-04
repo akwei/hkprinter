@@ -8,6 +8,8 @@
 
 #import "HKPOSTable.h"
 
+#pragma mark - HKPOSColumn
+
 @interface HKPOSColumn ()
 /*
  最终输出文本
@@ -30,7 +32,6 @@
 -(void)build{
     int chCount=0;
     int max = self.maxWordCount * 2;
-    
     NSMutableString* buf = [[NSMutableString alloc] init];
     for (int i=0; i<[self.text length]; i++) {
         if (chCount >= max) {
@@ -82,13 +83,15 @@
 }
 
 -(NSString*)getTextWithIndex:(NSUInteger)index{
-    if (index <= [self.textList count] -1) {
+    if ((index < [self.textList count]) && ([self.textList count] > 0)) {
         return [self.textList objectAtIndex:index];
     }
     return [self getEmptyString];
 }
 
 @end
+
+#pragma mark - HKPOSRow
 
 @interface HKPOSRow ()
 @property(nonatomic,strong)NSMutableArray* columnList;
@@ -127,6 +130,8 @@
 }
 
 @end
+
+#pragma mark - HKPOSTable
 
 @interface HKPOSTable ()
 @property(nonatomic,strong)NSMutableArray* rowList;

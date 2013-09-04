@@ -216,6 +216,7 @@
 
 -(void)close{
     [self.con_cond lock];
+    //    [NSThread sleepForTimeInterval:5];
     self.done = NO;
     if (self.socket) {
         [self.socket disconnect];
@@ -225,6 +226,7 @@
     }
     self.done = NO;
     self.socket = nil;
+    //    [NSThread sleepForTimeInterval:5];
     [self.con_cond unlock];
 }
 
